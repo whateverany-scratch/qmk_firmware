@@ -1,0 +1,82 @@
+{
+  "keyboard_name": "babe30",
+  "manufacturer": "DIY",
+  "url": "https://github.com/whateverany-scratch/qmk/tree/main/keyboards/whateverany/babe30",
+  "maintainer": "whateverany",
+  "usb": {
+    "pid": "0x0030",
+    "vid": "0xBABE",
+    "device_version": "0.0.1"
+  },
+  "width": 10,
+  "height": 3,
+  "layouts": {
+    "LAYOUT_ortho_3x10": {
+      "layout": [
+        {"x": 0, "y": 0},
+        {"x": 1, "y": 0},
+        {"x": 2, "y": 0},
+        {"x": 3, "y": 0},
+        {"x": 4, "y": 0},
+        {"x": 5, "y": 0},
+        {"x": 6, "y": 0},
+        {"x": 7, "y": 0},
+        {"x": 8, "y": 0},
+        {"x": 9, "y": 0},
+
+        {"x": 0, "y": 1},
+        {"x": 1, "y": 1},
+        {"x": 2, "y": 1},
+        {"x": 3, "y": 1},
+        {"x": 4, "y": 1},
+        {"x": 5, "y": 1},
+        {"x": 6, "y": 1},
+        {"x": 7, "y": 1},
+        {"x": 8, "y": 1},
+        {"x": 9, "y": 1},
+
+        {"x": 0, "y": 2},
+        {"x": 1, "y": 2},
+        {"x": 2, "y": 2},
+        {"x": 3, "y": 2},
+        {"x": 4, "y": 2},
+        {"x": 5, "y": 2},
+        {"x": 6, "y": 2},
+        {"x": 7, "y": 2},
+        {"x": 8, "y": 2},
+        {"x": 9, "y": 2}
+    }
+  }
+}
+
+
+
+# MCU name
+MCU = atmega32u4
+
+# Bootloader selection
+BOOTLOADER = caterina
+
+# Build Options
+#   change yes to no to disable
+#
+BOOTMAGIC_ENABLE = lite     # Virtual DIP switch configuration
+MOUSEKEY_ENABLE = yes       # Mouse keys
+EXTRAKEY_ENABLE = yes       # Audio control and System control
+CONSOLE_ENABLE = yes        # Console for debug
+COMMAND_ENABLE = yes        # Commands for debug and configuration
+# Do not enable SLEEP_LED_ENABLE. it uses the same timer as BACKLIGHT_ENABLE
+SLEEP_LED_ENABLE = no       # Breathing sleep LED during USB suspend
+# if this doesn't work, see here: https://github.com/tmk/tmk_keyboard/wiki/FAQ#nkro-doesnt-work
+NKRO_ENABLE = yes           # USB Nkey Rollover
+BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
+RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
+MIDI_ENABLE = no            # MIDI support
+UNICODE_ENABLE = no         # Unicode
+BLUETOOTH_ENABLE = no       # Enable Bluetooth
+AUDIO_ENABLE = no           # Audio output
+FAUXCLICKY_ENABLE = no      # Use buzzer to emulate clicky switches
+
+LAYOUTS = ortho_5x12
+
+AUDIO_SUPPORTED = no
